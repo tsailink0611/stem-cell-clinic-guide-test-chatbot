@@ -22,10 +22,10 @@ export const clinicConfig = {
     mn: "Даваа–Бямба 10:00–19:00 (Ням гариг амарна)", // TODO_TRANSLATION_REVIEW
   },
   nearestStation: {
-    ja: "東京メトロ銀座駅", // TODO_CONTENT_REVIEW: 出口番号等
-    en: "Ginza Station (Tokyo Metro)",
-    zh: "东京地铁银座站", // TODO_TRANSLATION_REVIEW
-    mn: "Гинза станц (Токио Метро)", // TODO_TRANSLATION_REVIEW
+    ja: "東京メトロ銀座駅 A3出口 徒歩1分 / 東銀座駅 徒歩3分",
+    en: "Ginza Station (Tokyo Metro) Exit A3, 1-min walk / Higashi-Ginza Station, 3-min walk",
+    zh: "东京地铁银座站 A3出口 步行1分钟 / 东银座站 步行3分钟",
+    mn: "Гинза станц (Токио Метро) A3 гарц, 1 мин алхалт / Хигаши-Гинза станц, 3 мин алхалт", // TODO_TRANSLATION_REVIEW
   },
   bookingUrl: "#", // TODO_OPERATION_CONFIRM: 予約リンク先URL
   googleMapUrl:

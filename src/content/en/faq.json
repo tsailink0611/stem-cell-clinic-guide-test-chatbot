@@ -3,43 +3,47 @@
   "items": [
     {
       "q": "Is the consultation free?",
-      "a": "Yes, the initial consultation is free of charge."
+      "a": "Yes, consultations are free of charge. You are welcome to visit for a consultation only, even if you are still considering whether to proceed with treatment."
     },
     {
       "q": "Do I need a reservation?",
-      "a": "Yes, our clinic operates by appointment only. Please book online, by phone, or by email."
+      "a": "Yes, our clinic operates by appointment only. Please book in advance online, by phone, or by email."
     },
     {
-      "q": "Can I receive treatment on the same day?",
-      "a": "Same-day treatment may be possible depending on schedule and availability."
+      "q": "Can I receive treatment on the same day as my consultation?",
+      "a": "Yes, same-day treatment is possible. Treatment typically takes about 30 minutes, so please allow extra time if you are considering treatment on the same day. Please note that same-day treatment may not be available depending on your appointment time or clinic availability."
     },
     {
-      "q": "Who explains the treatment?",
-      "a": "A doctor or nurse will explain the treatment details and precautions."
+      "q": "Who conducts the consultation?",
+      "a": "Consultations are conducted by doctors and nurses with extensive knowledge of regenerative medicine."
     },
     {
-      "q": "Is Chinese language support available?",
-      "a": "Yes, we can assist you in Chinese."
-    },
-    {
-      "q": "How long does the first visit take?",
-      "a": "The first visit usually takes within 60 minutes. Subsequent visits may be shorter."
-    },
-    {
-      "q": "Where is the clinic?",
-      "a": "We are located at Ginza Seigetsudo Bldg. 5F, 5-9-15 Ginza, Chuo-ku, Tokyo, near Ginza Station on the Tokyo Metro."
+      "q": "How long does a visit take?",
+      "a": "The first visit, including consultation, usually takes within 60 minutes. Follow-up visits often take within 30 minutes."
     },
     {
       "q": "Are there any additional fees?",
-      "a": "Costs vary depending on the treatment. Details will be provided during your consultation."
+      "a": "Anesthesia is available as an optional add-on for injection treatments, tailored to your preference. There are no unexpected additional charges beyond the fees presented to you in advance."
+    },
+    {
+      "q": "Is Chinese language support available?",
+      "a": "Yes, our doctor is able to assist in Chinese. Chinese-speaking patients are welcome."
+    },
+    {
+      "q": "Are there cases where treatment is not possible?",
+      "a": "Treatment is not available for those who are pregnant, may be pregnant, or are currently undergoing cancer treatment. Please confirm details during your consultation."
+    },
+    {
+      "q": "Where is the clinic?",
+      "a": "We are located at Ginza Seigetsudo Bldg. 5F, 5-9-15 Ginza, Chuo-ku, Tokyo. It is a 1-minute walk from Exit A3 of Ginza Station (Tokyo Metro), or a 3-minute walk from Higashi-Ginza Station."
     },
     {
       "q": "What happens if I cancel without notice?",
-      "a": "A cancellation fee of 3,000 yen may apply. Please contact us in advance if you need to cancel or reschedule."
+      "a": "A cancellation fee of 3,000 yen will be charged for no-show cancellations. Please contact us in advance if you need to cancel or reschedule."
     },
     {
-      "q": "Can I book my next appointment at the clinic?",
-      "a": "Yes, you can schedule your next visit at the clinic after your treatment."
+      "q": "How do I make my next appointment?",
+      "a": "You can book your next appointment online, by phone, or by email. You can also schedule your next visit at the clinic after your treatment."
     }
   ]
 }
