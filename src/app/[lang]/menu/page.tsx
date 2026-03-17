@@ -1,5 +1,4 @@
 import { isValidLocale } from "@/lib/i18n";
-import { clinicConfig } from "@/lib/clinic-config";
 import { getContent } from "@/lib/content-loader";
 import type { MenuContent, MetaContent } from "@/lib/content-loader";
 import { notFound } from "next/navigation";
@@ -40,7 +39,7 @@ export default async function MenuPage({
         </p>
       </div>
 
-      <div className="space-y-8 mb-20">
+      <div className="space-y-8">
         {content.categories.map((category, i) => (
           <div
             key={i}
@@ -54,16 +53,6 @@ export default async function MenuPage({
             </p>
           </div>
         ))}
-      </div>
-
-      {/* TODO_OPERATION_CONFIRM: 予約リンク先URL */}
-      <div className="text-center">
-        <a
-          href={clinicConfig.bookingUrl}
-          className="inline-block py-4 px-10 bg-accent hover:bg-accent-dark text-white text-sm tracking-wide rounded-sm transition-colors"
-        >
-          {content.ctaText}
-        </a>
       </div>
     </div>
   );

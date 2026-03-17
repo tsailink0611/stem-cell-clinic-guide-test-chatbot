@@ -6,5 +6,8 @@
   "emailLabel": "Имэйл",
   "hoursLabel": "Цагийн хуваарь",
   "stationLabel": "Хамгийн ойр станц",
-  "mapLinkText": "Google газрын зураг дээр харах"
+  "mapLinkText": "Google газрын зураг дээр харах",
+  "showToDriver": "Таксины жолоочид үзүүлэх",
+  "tapToCopy": "Хаягийг хуулахын тулд дарна уу",
+  "copied": "Хуулсан"
 }

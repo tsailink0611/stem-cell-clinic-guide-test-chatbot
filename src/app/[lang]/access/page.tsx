@@ -8,6 +8,7 @@ import {
 import { getContent } from "@/lib/content-loader";
 import type { AccessContent, MetaContent } from "@/lib/content-loader";
 import { notFound } from "next/navigation";
+import AddressCard from "./address-card";
 
 export async function generateMetadata({
   params,
@@ -32,6 +33,7 @@ export default async function AccessPage({
   if (!isValidLocale(lang)) notFound();
 
   const content = getContent<AccessContent>(lang, "access");
+  const jaAddress = clinicConfig.address.ja;
 
   const infoItems = [
     {
@@ -72,6 +74,15 @@ export default async function AccessPage({
         <div className="w-12 h-px bg-accent mx-auto" />
       </div>
 
+      {/* Address card for taxi / navigation */}
+      <AddressCard
+        address={jaAddress}
+        showToDriver={content.showToDriver}
+        tapToCopy={content.tapToCopy}
+        copied={content.copied}
+      />
+
+      {/* Info list */}
       <div className="space-y-0 mb-16">
         {infoItems.map((item, i) => (
           <div
@@ -110,7 +121,7 @@ export default async function AccessPage({
         ))}
       </div>
 
-      {/* TODO_OPERATION_CONFIRM: Google Map リンク */}
+      {/* Google Map Link */}
       <div className="text-center">
         <a
           href={clinicConfig.googleMapUrl}

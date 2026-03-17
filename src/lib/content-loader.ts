@@ -2,9 +2,6 @@ import type { Locale } from "./i18n";
 
 // 型定義
 export interface CommonContent {
-  bookOnline: string;
-  callUs: string;
-  emailUs: string;
   backToTop: string;
   navigation: {
     top: string;
@@ -69,6 +66,9 @@ export interface AccessContent {
   hoursLabel: string;
   stationLabel: string;
   mapLinkText: string;
+  showToDriver: string;
+  tapToCopy: string;
+  copied: string;
 }
 
 export interface HelpContent {

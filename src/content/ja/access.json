@@ -5,5 +5,8 @@
   "emailLabel": "メール",
   "hoursLabel": "診療時間",
   "stationLabel": "最寄り駅",
-  "mapLinkText": "Google Mapで見る"
+  "mapLinkText": "Google Mapで見る",
+  "showToDriver": "タクシー運転手に見せる",
+  "tapToCopy": "タップして住所をコピー",
+  "copied": "コピーしました"
 }

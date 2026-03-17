@@ -5,5 +5,8 @@
   "emailLabel": "邮箱",
   "hoursLabel": "诊疗时间",
   "stationLabel": "最近车站",
-  "mapLinkText": "在Google地图中查看"
+  "mapLinkText": "在Google地图中查看",
+  "showToDriver": "出示给出租车司机",
+  "tapToCopy": "点击复制地址",
+  "copied": "已复制"
 }

@@ -5,5 +5,8 @@
   "emailLabel": "Email",
   "hoursLabel": "Hours",
   "stationLabel": "Nearest Station",
-  "mapLinkText": "View on Google Maps"
+  "mapLinkText": "View on Google Maps",
+  "showToDriver": "Show to taxi driver",
+  "tapToCopy": "Tap to copy address",
+  "copied": "Copied!"
 }
