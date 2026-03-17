@@ -1,0 +1,31 @@
+{
+  "title": "Your Visit",
+  "intro": "Here is what to expect during your first visit to our clinic.",
+  "steps": [
+    {
+      "step": "Reservation & Arrival",
+      "description": "Please book in advance online, by phone, or by email, then visit the clinic."
+    },
+    {
+      "step": "Reception",
+      "description": "Please provide your name and reservation details at the front desk."
+    },
+    {
+      "step": "Consultation",
+      "description": "A doctor or staff member will listen to your concerns and preferences.",
+      "note": "Same-day treatment may be possible depending on schedule and availability."
+    },
+    {
+      "step": "Explanation by Doctor / Nurse",
+      "description": "Your doctor or nurse will explain the treatment details and any important precautions."
+    },
+    {
+      "step": "Treatment",
+      "description": "Treatment will proceed with your informed consent."
+    },
+    {
+      "step": "Payment & Next Appointment",
+      "description": "After treatment, you can make your payment and schedule your next visit."
+    }
+  ]
+}

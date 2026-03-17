@@ -1,0 +1,17 @@
+{
+  "bookOnline": "在线预约",
+  "callUs": "电话咨询",
+  "emailUs": "邮件咨询",
+  "backToTop": "返回顶部",
+  "navigation": {
+    "top": "首页",
+    "about": "关于诊所",
+    "menu": "治疗项目",
+    "flow": "就诊流程",
+    "notes": "注意事项",
+    "faq": "常见问题",
+    "access": "交通·联系方式",
+    "help": "给工作人员看"
+  },
+  "changeLang": "更换语言"
+}

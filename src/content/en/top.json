@@ -1,0 +1,11 @@
+{
+  "welcome": "Welcome to Stem Cell Clinic Tokyo",
+  "description": "This guide helps you understand our treatments, visit process, and how to reach us.",
+  "cta": {
+    "flow": "First Visit Guide",
+    "menu": "Treatments",
+    "access": "Access & Contact",
+    "faq": "FAQ",
+    "help": "Show This to Staff"
+  }
+}

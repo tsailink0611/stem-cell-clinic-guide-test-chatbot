@@ -1,0 +1,38 @@
+{
+  "siteName": "Stem Cell Clinic Tokyo – Visitor Guide",
+  "siteDescription": "Multilingual visitor guide for international patients. Learn about our treatments, visit process, and access information.",
+  "pages": {
+    "top": {
+      "title": "Visitor Guide",
+      "description": "Welcome to Stem Cell Clinic Tokyo visitor guide."
+    },
+    "about": {
+      "title": "About the Clinic",
+      "description": "Learn about our regenerative medicine clinic."
+    },
+    "menu": {
+      "title": "Treatments",
+      "description": "Overview of treatment categories available at our clinic."
+    },
+    "flow": {
+      "title": "Visit Guide",
+      "description": "Step-by-step guide for your first visit."
+    },
+    "notes": {
+      "title": "Important Notes",
+      "description": "Important information for your visit."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Frequently asked questions from patients."
+    },
+    "access": {
+      "title": "Access & Contact",
+      "description": "Clinic location, directions, and contact information."
+    },
+    "help": {
+      "title": "Show to Staff",
+      "description": "Show this screen to our staff for assistance."
+    }
+  }
+}

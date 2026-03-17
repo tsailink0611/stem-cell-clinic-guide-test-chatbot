@@ -1,0 +1,13 @@
+{
+  "title": "Please Show This Screen to Staff",
+  "instruction": "Tap a phrase below and show it to the receptionist, doctor, or nurse.",
+  "phrases": [
+    { "text": "I have a reservation.", "ja": "予約しています。" },
+    { "text": "I do not speak Japanese.", "ja": "日本語が話せません。" },
+    { "text": "Please speak slowly.", "ja": "ゆっくり話してください。" },
+    { "text": "I would like consultation only.", "ja": "カウンセリングのみ希望です。" },
+    { "text": "This is my first visit.", "ja": "初めて来ました。" },
+    { "text": "I have a question about the treatment.", "ja": "施術について質問があります。" },
+    { "text": "I need language assistance.", "ja": "通訳が必要です。" }
+  ]
+}

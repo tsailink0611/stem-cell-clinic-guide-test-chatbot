@@ -1,0 +1,38 @@
+{
+  "siteName": "干细胞诊所东京 就诊指南",
+  "siteDescription": "面向外国患者的多语言就诊指南。了解我们的治疗项目、就诊流程和交通信息。",
+  "pages": {
+    "top": {
+      "title": "就诊指南",
+      "description": "欢迎使用干细胞诊所东京就诊指南。"
+    },
+    "about": {
+      "title": "关于诊所",
+      "description": "了解我们的再生医疗专科诊所。"
+    },
+    "menu": {
+      "title": "治疗项目",
+      "description": "诊所提供的治疗项目概览。"
+    },
+    "flow": {
+      "title": "就诊流程",
+      "description": "首次就诊的详细流程指南。"
+    },
+    "notes": {
+      "title": "注意事项",
+      "description": "就诊前请确认的重要事项。"
+    },
+    "faq": {
+      "title": "常见问题",
+      "description": "患者常见问题解答。"
+    },
+    "access": {
+      "title": "交通·联系方式",
+      "description": "诊所位置、交通方式和联系信息。"
+    },
+    "help": {
+      "title": "给工作人员看",
+      "description": "请将此画面出示给工作人员。"
+    }
+  }
+}

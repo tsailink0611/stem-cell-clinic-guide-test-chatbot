@@ -1,0 +1,17 @@
+{
+  "bookOnline": "Book Online",
+  "callUs": "Call Us",
+  "emailUs": "Email Us",
+  "backToTop": "Back to Top",
+  "navigation": {
+    "top": "Home",
+    "about": "About",
+    "menu": "Treatments",
+    "flow": "Visit Guide",
+    "notes": "Important Notes",
+    "faq": "FAQ",
+    "access": "Access & Contact",
+    "help": "Show to Staff"
+  },
+  "changeLang": "Change Language"
+}

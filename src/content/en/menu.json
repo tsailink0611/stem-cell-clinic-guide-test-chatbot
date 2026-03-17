@@ -1,0 +1,27 @@
+{
+  "title": "Treatments",
+  "note": "Details and suitability are confirmed during your consultation.",
+  "categories": [
+    {
+      "name": "Beauty / Anti-aging",
+      "description": "Regenerative treatments for skin rejuvenation and anti-aging. Please consult with our team for details."
+    },
+    {
+      "name": "Hair Regeneration",
+      "description": "Regenerative treatments for hair loss concerns. Suitability varies depending on individual condition."
+    },
+    {
+      "name": "Knee / Joint Treatment",
+      "description": "Regenerative treatments for knee and joint pain or discomfort. We will advise based on your condition."
+    },
+    {
+      "name": "Chronic Pain",
+      "description": "Regenerative medicine approaches for chronic pain management."
+    },
+    {
+      "name": "Fatigue Recovery",
+      "description": "Treatments aimed at fatigue recovery. Options are tailored to your condition."
+    }
+  ],
+  "ctaText": "Discuss details in a free consultation"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Important Notes",
+  "intro": "Please review the following before your visit.",
+  "items": [
+    { "text": "Our clinic operates by appointment only. Please book in advance." },
+    { "text": "Initial consultation is free of charge." },
+    { "text": "Same-day treatment may be available depending on the schedule. Availability will be confirmed at the clinic." },
+    { "text": "Treatment suitability varies depending on individual condition. Details will be discussed during your consultation." },
+    { "text": "Cancellation without notice may incur a fee of 3,000 yen. Please contact us in advance if you need to cancel or reschedule." },
+    { "text": "If you have any questions, please do not hesitate to ask our staff." }
+  ]
+}

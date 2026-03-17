@@ -1,0 +1,12 @@
+{
+  "title": "About the Clinic",
+  "intro": "Stem Cell Clinic Tokyo is a clinic specializing in regenerative medicine. We provide personalized consultations and treatments tailored to each patient.",
+  "features": [
+    { "label": "Specialized in regenerative medicine" },
+    { "label": "Free initial consultation" },
+    { "label": "Appointment required" },
+    { "label": "Private rooms available" },
+    { "label": "Chinese language support available" },
+    { "label": "Usually within 60 minutes for the first visit" }
+  ]
+}

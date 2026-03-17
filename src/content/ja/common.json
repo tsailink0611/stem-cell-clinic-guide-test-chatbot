@@ -1,0 +1,17 @@
+{
+  "bookOnline": "WEB予約",
+  "callUs": "お電話",
+  "emailUs": "メール",
+  "backToTop": "トップへ戻る",
+  "navigation": {
+    "top": "トップ",
+    "about": "クリニックについて",
+    "menu": "施術メニュー",
+    "flow": "来院の流れ",
+    "notes": "ご注意事項",
+    "faq": "よくあるご質問",
+    "access": "アクセス・連絡先",
+    "help": "スタッフに見せる"
+  },
+  "changeLang": "言語を変更"
+}
