@@ -32,6 +32,9 @@ export interface AboutContent {
   title: string;
   intro: string;
   features: { label: string }[];
+  doctorTitle: string;
+  doctorName: string;
+  doctorBio: string;
 }
 
 export interface MenuContent {
@@ -39,6 +42,7 @@ export interface MenuContent {
   note: string;
   categories: { name: string; description: string }[];
   ctaText: string;
+  pricingNote: string;
 }
 
 export interface FlowContent {

@@ -39,7 +39,7 @@ export default async function MenuPage({
         </p>
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-8 mb-16">
         {content.categories.map((category, i) => (
           <div
             key={i}
@@ -53,6 +53,13 @@ export default async function MenuPage({
             </p>
           </div>
         ))}
+      </div>
+
+      {/* Pricing note */}
+      <div className="bg-surface-warm px-8 py-6 rounded-sm">
+        <p className="text-xs sm:text-sm text-text-secondary font-light leading-relaxed">
+          {content.pricingNote}
+        </p>
       </div>
     </div>
   );

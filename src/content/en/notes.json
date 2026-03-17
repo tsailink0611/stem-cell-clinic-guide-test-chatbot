@@ -3,10 +3,14 @@
   "intro": "Please review the following before your visit.",
   "items": [
     { "text": "Our clinic operates by appointment only. Please book in advance." },
-    { "text": "Initial consultation is free of charge." },
-    { "text": "Same-day treatment may be available depending on the schedule. Availability will be confirmed at the clinic." },
+    { "text": "Initial consultation is free of charge. You are welcome even if you are still considering." },
+    { "text": "This is a self-pay clinic (not covered by insurance). National health insurance and overseas travel insurance do not apply." },
+    { "text": "All fees are all-inclusive from consultation to treatment. There are no unexpected additional charges beyond the fees presented to you." },
+    { "text": "Same-day treatment may be available depending on the schedule. If you are considering same-day treatment, please allow extra time for your visit." },
     { "text": "Treatment suitability varies depending on individual condition. Details will be discussed during your consultation." },
-    { "text": "Cancellation without notice may incur a fee of 3,000 yen. Please contact us in advance if you need to cancel or reschedule." },
+    { "text": "Treatment is not available for those who are pregnant, may be pregnant, or are currently undergoing cancer treatment." },
+    { "text": "After receiving a stem cell supernatant IV drip, you will be unable to donate blood for a period of time." },
+    { "text": "A cancellation fee of 3,000 yen will be charged for no-show cancellations. Please contact us in advance if you need to cancel or reschedule." },
     { "text": "If you have any questions, please do not hesitate to ask our staff." }
   ]
 }

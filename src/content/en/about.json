@@ -1,12 +1,17 @@
 {
   "title": "About the Clinic",
-  "intro": "Stem Cell Clinic Tokyo is a clinic specializing in regenerative medicine. We provide personalized consultations and treatments tailored to each patient.",
+  "intro": "Stem Cell Clinic Tokyo is a clinic specializing in regenerative medicine. We offer IV drip and injection treatments using stem cell culture supernatant (exosomes), with personalized consultations and care tailored to each patient.",
   "features": [
     { "label": "Specialized in regenerative medicine" },
-    { "label": "Free initial consultation" },
-    { "label": "Appointment required" },
-    { "label": "Private rooms available" },
-    { "label": "Chinese language support available" },
-    { "label": "Usually within 60 minutes for the first visit" }
-  ]
+    { "label": "Free initial consultation (even if you are still considering)" },
+    { "label": "Appointment only" },
+    { "label": "Fully private rooms (consultation and treatment)" },
+    { "label": "All-inclusive pricing with no unexpected additional charges" },
+    { "label": "First visit within 60 minutes, follow-ups within 30 minutes" },
+    { "label": "Chinese language support (doctor speaks Chinese)" },
+    { "label": "1-minute walk from Ginza Station Exit A3" }
+  ],
+  "doctorTitle": "Our Doctor",
+  "doctorName": "Dr. Jun Tachibana",
+  "doctorBio": "Graduated from Jinan University Faculty of Medicine in China. Licensed physician in both China and Japan. After training at Juntendo University Hospital and gaining experience in aesthetic dermatology injection treatments, Dr. Tachibana now specializes in regenerative medicine. Consultations in Chinese are available."
 }

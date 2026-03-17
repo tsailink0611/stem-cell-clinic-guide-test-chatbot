@@ -1,27 +1,28 @@
 {
   "title": "Treatments",
-  "note": "Details and suitability are confirmed during your consultation.",
+  "note": "We offer regenerative medicine through IV drip and injection treatments using stem cell culture supernatant (exosomes). Details and suitability will be discussed during your free consultation.",
   "categories": [
     {
       "name": "Beauty / Anti-aging",
-      "description": "Regenerative treatments for skin rejuvenation and anti-aging. Please consult with our team for details."
+      "description": "Regenerative treatments aimed at skin rejuvenation and anti-aging. Improvements in skin firmness and radiance may be expected."
     },
     {
       "name": "Hair Regeneration",
-      "description": "Regenerative treatments for hair loss concerns. Suitability varies depending on individual condition."
+      "description": "Regenerative treatments for hair loss concerns. Suitability varies depending on individual condition — please consult with our team."
     },
     {
       "name": "Knee / Joint Treatment",
-      "description": "Regenerative treatments for knee and joint pain or discomfort. We will advise based on your condition."
+      "description": "Regenerative treatments for knee and joint pain or discomfort. These treatments may help support tissue repair."
     },
     {
       "name": "Chronic Pain",
       "description": "Regenerative medicine approaches for chronic pain management."
     },
     {
-      "name": "Fatigue Recovery",
-      "description": "Treatments aimed at fatigue recovery. Options are tailored to your condition."
+      "name": "Fatigue Recovery / Immune Support",
+      "description": "Treatments aimed at fatigue recovery and immune balance. Options are tailored to your condition."
     }
   ],
-  "ctaText": "Discuss details in a free consultation"
+  "ctaText": "Discuss details in a free consultation",
+  "pricingNote": "This is a self-pay (non-insurance) clinic. All fees are all-inclusive from consultation to treatment, with no unexpected additional charges. Detailed pricing will be provided during your free consultation."
 }

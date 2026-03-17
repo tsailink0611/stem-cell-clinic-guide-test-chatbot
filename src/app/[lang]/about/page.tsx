@@ -40,7 +40,8 @@ export default async function AboutPage({
         {content.intro}
       </p>
 
-      <div className="space-y-0">
+      {/* Features */}
+      <div className="space-y-0 mb-20">
         {content.features.map((feature, i) => (
           <div
             key={i}
@@ -54,6 +55,19 @@ export default async function AboutPage({
             </p>
           </div>
         ))}
+      </div>
+
+      {/* Doctor */}
+      <div className="border border-border-light rounded-sm p-8 sm:p-10">
+        <p className="text-xs text-text-muted tracking-widest uppercase mb-4">
+          {content.doctorTitle}
+        </p>
+        <h3 className="font-display text-lg sm:text-xl font-light text-primary mb-6">
+          {content.doctorName}
+        </h3>
+        <p className="text-sm text-text-secondary font-light leading-relaxed">
+          {content.doctorBio}
+        </p>
       </div>
     </div>
   );
