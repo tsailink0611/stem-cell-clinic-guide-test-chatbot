@@ -9,7 +9,7 @@ import { CHAT_COLORS } from "./constants";
  * DIFY_FOOTER_H: "Powered by Dify" フッター
  * クロスオリジン制限のため JS で操作不可 → CSS クリップで対応
  */
-const DIFY_HEADER_H = 52;
+const DIFY_HEADER_H = 58;
 const DIFY_FOOTER_H = 48;
 
 export default function DifyIframe() {
