@@ -14,6 +14,7 @@ export default function DifyChatbot() {
             window.difyChatbotConfig = {
               token: '${difyConfig.token}',
               baseUrl: '${difyConfig.baseUrl}',
+              dynamicScript: true,
               inputs: {},
               systemVariables: {},
               userVariables: {},
