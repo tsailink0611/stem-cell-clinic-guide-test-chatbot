@@ -47,6 +47,7 @@ export default function ChatPanel({ isOpen, onClose }: ChatPanelProps) {
       role="dialog"
       aria-label="チャットパネル"
       aria-hidden={!isOpen}
+      aria-modal={isOpen}
       ref={panelRef}
       style={{
         position: "fixed",
@@ -66,7 +67,7 @@ export default function ChatPanel({ isOpen, onClose }: ChatPanelProps) {
         /* 開閉アニメーション */
         transform: isOpen ? "translateY(0) scale(1)" : "translateY(16px) scale(0.97)",
         opacity: isOpen ? 1 : 0,
-        pointerEvents: isOpen ? "all" : "none",
+        pointerEvents: isOpen ? "auto" : "none",
         transition: isOpen
           ? "transform 0.28s cubic-bezier(0.22,1,0.36,1), opacity 0.22s ease"
           : "transform 0.2s ease, opacity 0.2s ease",
