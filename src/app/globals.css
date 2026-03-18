@@ -24,3 +24,14 @@ body {
 .animate-delay-300 { animation-delay: 0.3s; }
 .animate-delay-400 { animation-delay: 0.4s; }
 .animate-delay-500 { animation-delay: 0.5s; }
+
+/* チャットウィジェット SP レスポンシブ */
+@media (max-width: 639px) {
+  #chat-panel {
+    right: 16px !important;
+    width: calc(100vw - 32px) !important;
+  }
+  .chat-bubble-btn {
+    right: 16px !important;
+  }
+}
