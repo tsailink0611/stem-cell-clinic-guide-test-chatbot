@@ -1,4 +1,4 @@
 export const difyConfig = {
-  token: "j0NWlcRF02PvMBdb",
+  token: "g1W7DYvx3aSzMFAM",
   baseUrl: "https://dify.michiworks.jp",
 } as const;
