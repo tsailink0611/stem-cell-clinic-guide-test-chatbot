@@ -2,16 +2,30 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { CHAT_COLORS, CHAT_Z_INDEX } from "./constants";
+import {
+  CHAT_COLORS,
+  CHAT_Z_INDEX,
+  chatHeaderByLocale,
+  chatAriaByLocale,
+  LABEL_FALLBACK_LOCALE,
+} from "./constants";
 import DifyIframe from "./DifyIframe";
 
 interface ChatPanelProps {
   isOpen: boolean;
   onClose: () => void;
+  locale: string;
 }
 
-export default function ChatPanel({ isOpen, onClose }: ChatPanelProps) {
+export default function ChatPanel({ isOpen, onClose, locale }: ChatPanelProps) {
   const panelRef = useRef<HTMLDivElement>(null);
+
+  const aria =
+    chatAriaByLocale[locale as keyof typeof chatAriaByLocale] ??
+    chatAriaByLocale[LABEL_FALLBACK_LOCALE];
+  const headerTitle =
+    chatHeaderByLocale[locale as keyof typeof chatHeaderByLocale] ??
+    chatHeaderByLocale[LABEL_FALLBACK_LOCALE];
 
   /* Escキーで閉じる */
   useEffect(() => {
@@ -45,7 +59,7 @@ export default function ChatPanel({ isOpen, onClose }: ChatPanelProps) {
     <div
       id="chat-panel"
       role="dialog"
-      aria-label="チャットパネル"
+      aria-label={aria.dialog}
       aria-hidden={!isOpen}
       aria-modal={isOpen}
       ref={panelRef}
@@ -92,7 +106,7 @@ export default function ChatPanel({ isOpen, onClose }: ChatPanelProps) {
             letterSpacing: "0.1em",
             margin: 0,
           }}>
-            受付・案内サポート
+            {headerTitle}
           </p>
           <p style={{
             color: CHAT_COLORS.gold,
@@ -106,7 +120,7 @@ export default function ChatPanel({ isOpen, onClose }: ChatPanelProps) {
         </div>
         <button
           onClick={onClose}
-          aria-label="チャットを閉じる"
+          aria-label={aria.closePanel}
           style={{
             width: "26px",
             height: "26px",
@@ -131,7 +145,7 @@ export default function ChatPanel({ isOpen, onClose }: ChatPanelProps) {
 
       {/* Dify iframe */}
       <div style={{ flex: 1, overflow: "hidden" }}>
-        <DifyIframe />
+        <DifyIframe locale={locale} />
       </div>
     </div>
   );
