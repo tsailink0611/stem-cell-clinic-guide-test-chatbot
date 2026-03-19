@@ -33,5 +33,14 @@ body {
   }
   .chat-bubble-btn {
     right: 16px !important;
+    bottom: 16px !important;
+  }
+  /* SP: ラベルの文字サイズをやや小さく & 左右にはみ出さないよう制限 */
+  .chat-pill-label {
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+    max-width: calc(100vw - 100px);
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
