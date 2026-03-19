@@ -21,3 +21,18 @@ export const CHAT_Z_INDEX = 9999;
 
 /** バブルボタンのサイズ(px) */
 export const BUBBLE_SIZE = 60;
+
+/**
+ * チャットボタン横に表示する吹き出しラベル文言
+ * - 言語追加・文言変更はここだけで完結する
+ * - キーは i18n.ts の Locale と一致させること
+ */
+export const chatLabelByLocale: Record<string, string> = {
+  ja: 'ご質問はこちら',
+  zh: '点击咨询',
+  en: 'Ask us',
+  mn: 'Асуух бол энд дарна уу',
+} as const;
+
+/** ラベルが取得できない場合のフォールバック言語 */
+export const LABEL_FALLBACK_LOCALE = 'en';
