@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import {
   CHAT_COLORS,
   BUBBLE_SIZE,
@@ -18,9 +19,8 @@ interface FloatingChatButtonProps {
  * URLパスから現在のロケールを検出する
  * 例: /en/menu → "en", /zh → "zh", / → fallback
  */
-function detectLocale(): string {
-  if (typeof window === "undefined") return LABEL_FALLBACK_LOCALE;
-  const seg = window.location.pathname.split("/")[1] ?? "";
+function detectLocaleFromPath(pathname: string): string {
+  const seg = pathname.split("/")[1] ?? "";
   return seg in chatLabelByLocale ? seg : LABEL_FALLBACK_LOCALE;
 }
 
@@ -28,24 +28,17 @@ export default function FloatingChatButton({
   isOpen,
   onClick,
 }: FloatingChatButtonProps) {
-  const [locale, setLocale] = useState(LABEL_FALLBACK_LOCALE);
+  const pathname = usePathname();
+  const locale = detectLocaleFromPath(pathname);
+
   const [labelVisible, setLabelVisible] = useState(false);
 
-  // クライアント側でロケールを検出 & パス変更時にも追従
+  // パス変更のたびにラベルをフェードイン演出
   useEffect(() => {
-    const update = () => setLocale(detectLocale());
-    update();
-
-    // Next.js client navigation で popstate が発火する
-    window.addEventListener("popstate", update);
-    return () => window.removeEventListener("popstate", update);
-  }, []);
-
-  // 初回表示時に軽くフェードインする演出
-  useEffect(() => {
-    const id = setTimeout(() => setLabelVisible(true), 400);
+    setLabelVisible(false);
+    const id = setTimeout(() => setLabelVisible(true), 300);
     return () => clearTimeout(id);
-  }, []);
+  }, [locale]);
 
   const label = chatLabelByLocale[locale] ?? chatLabelByLocale[LABEL_FALLBACK_LOCALE];
 
@@ -58,7 +51,7 @@ export default function FloatingChatButton({
         right: "24px",
         display: "flex",
         alignItems: "center",
-        gap: "10px",
+        gap: "12px",
         zIndex: CHAT_Z_INDEX,
         pointerEvents: "none",
       }}
@@ -72,15 +65,15 @@ export default function FloatingChatButton({
           display: "inline-flex",
           alignItems: "center",
           whiteSpace: "nowrap",
-          padding: "6px 14px",
-          borderRadius: "20px",
-          background: "#FFFFFF",
-          border: "1px solid #e8e3dd",
-          boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
-          color: "#3a3a3a",
-          fontSize: "13px",
+          padding: "10px 20px",
+          borderRadius: "24px",
+          background: CHAT_COLORS.bubbleBg,
+          border: `1px solid ${CHAT_COLORS.gold}`,
+          boxShadow: `0 4px 16px rgba(0,0,0,0.15), 0 0 0 1px ${CHAT_COLORS.goldGlow}`,
+          color: "#F7F5F2",
+          fontSize: "14px",
           fontWeight: 400,
-          letterSpacing: "0.02em",
+          letterSpacing: "0.04em",
           lineHeight: 1.4,
           opacity: !isOpen && labelVisible ? 1 : 0,
           transform: !isOpen && labelVisible ? "translateX(0)" : "translateX(8px)",

@@ -28,10 +28,10 @@ export const BUBBLE_SIZE = 60;
  * - キーは i18n.ts の Locale と一致させること
  */
 export const chatLabelByLocale: Record<string, string> = {
-  ja: 'ご質問はこちら',
-  zh: '点击咨询',
-  en: 'Ask us',
-  mn: 'Асуух бол энд дарна уу',
+  ja: 'ご不明な点がございましたらお気軽にどうぞ',
+  zh: '如有任何疑问，欢迎随时咨询',
+  en: 'Questions? We\'re happy to help',
+  mn: 'Асуулт байвал энд дарна уу',
 } as const;
 
 /** ラベルが取得できない場合のフォールバック言語 */
