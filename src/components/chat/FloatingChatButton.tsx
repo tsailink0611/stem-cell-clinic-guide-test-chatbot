@@ -1,46 +1,44 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import {
   CHAT_COLORS,
   BUBBLE_SIZE,
   CHAT_Z_INDEX,
   chatLabelByLocale,
+  chatAriaByLocale,
   LABEL_FALLBACK_LOCALE,
 } from "./constants";
 
 interface FloatingChatButtonProps {
   isOpen: boolean;
   onClick: () => void;
-}
-
-/**
- * URLパスから現在のロケールを検出する
- * 例: /en/menu → "en", /zh → "zh", / → fallback
- */
-function detectLocaleFromPath(pathname: string): string {
-  const seg = pathname.split("/")[1] ?? "";
-  return seg in chatLabelByLocale ? seg : LABEL_FALLBACK_LOCALE;
+  locale: string;
 }
 
 export default function FloatingChatButton({
   isOpen,
   onClick,
+  locale,
 }: FloatingChatButtonProps) {
-  const pathname = usePathname();
-  const locale = detectLocaleFromPath(pathname);
-
   const [labelVisible, setLabelVisible] = useState(false);
 
-  // パス変更のたびにラベルをフェードイン演出
+  // ロケール変更 or チャットを閉じたタイミングでラベルをフェードイン
   useEffect(() => {
-    setLabelVisible(false);
+    if (isOpen) {
+      setLabelVisible(false);
+      return;
+    }
     const id = setTimeout(() => setLabelVisible(true), 300);
     return () => clearTimeout(id);
-  }, [locale]);
+  }, [locale, isOpen]);
 
-  const label = chatLabelByLocale[locale] ?? chatLabelByLocale[LABEL_FALLBACK_LOCALE];
+  const label =
+    chatLabelByLocale[locale as keyof typeof chatLabelByLocale] ??
+    chatLabelByLocale[LABEL_FALLBACK_LOCALE];
+  const aria =
+    chatAriaByLocale[locale as keyof typeof chatAriaByLocale] ??
+    chatAriaByLocale[LABEL_FALLBACK_LOCALE];
 
   return (
     <div
@@ -86,12 +84,13 @@ export default function FloatingChatButton({
         {label}
       </span>
 
-      {/* ── チャットアイコンボタン ── */}
+      {/* ── チャットアイコンボタン（ホバーはCSS .chat-bubble-icon で管理） ── */}
       <button
         onClick={onClick}
-        aria-label={isOpen ? "チャットを閉じる" : "チャットを開く"}
+        aria-label={isOpen ? aria.close : aria.open}
         aria-expanded={isOpen}
         aria-controls="chat-panel"
+        className="chat-bubble-icon"
         style={{
           pointerEvents: "auto",
           flexShrink: 0,
@@ -100,23 +99,11 @@ export default function FloatingChatButton({
           borderRadius: "50%",
           background: CHAT_COLORS.bubbleBg,
           border: `1.5px solid ${CHAT_COLORS.gold}`,
-          boxShadow: "0 4px 20px rgba(0,0,0,0.18)",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           cursor: "pointer",
-          transition: "transform 0.2s ease, box-shadow 0.2s ease",
           padding: 0,
-        }}
-        onMouseEnter={(e) => {
-          (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.06)";
-          (e.currentTarget as HTMLButtonElement).style.boxShadow =
-            `0 6px 28px ${CHAT_COLORS.goldGlow}`;
-        }}
-        onMouseLeave={(e) => {
-          (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
-          (e.currentTarget as HTMLButtonElement).style.boxShadow =
-            "0 4px 20px rgba(0,0,0,0.18)";
         }}
       >
         {isOpen ? (

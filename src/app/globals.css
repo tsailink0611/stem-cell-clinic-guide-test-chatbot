@@ -25,6 +25,16 @@ body {
 .animate-delay-400 { animation-delay: 0.4s; }
 .animate-delay-500 { animation-delay: 0.5s; }
 
+/* チャットバブルアイコン ホバー・トランジション（CSS管理） */
+.chat-bubble-icon {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.chat-bubble-icon:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 28px rgba(184,154,106,0.25);
+}
+
 /* チャットウィジェット SP レスポンシブ */
 @media (max-width: 639px) {
   #chat-panel {

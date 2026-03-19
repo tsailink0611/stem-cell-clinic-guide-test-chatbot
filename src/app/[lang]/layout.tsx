@@ -3,6 +3,7 @@ import { locales, isValidLocale } from "@/lib/i18n";
 import { getClinicName } from "@/lib/clinic-config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import LangSync from "@/components/LangSync";
 import { getContent } from "@/lib/content-loader";
 import type { CommonContent, MetaContent } from "@/lib/content-loader";
 
@@ -57,10 +58,13 @@ export default async function LangLayout({
   const clinicName = getClinicName(lang);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header locale={lang} common={common} clinicName={clinicName} />
-      <main className="flex-1">{children}</main>
-      <Footer locale={lang} common={common} />
-    </div>
+    <>
+      <LangSync />
+      <div className="min-h-screen flex flex-col">
+        <Header locale={lang} common={common} clinicName={clinicName} />
+        <main className="flex-1">{children}</main>
+        <Footer locale={lang} common={common} />
+      </div>
+    </>
   );
 }
