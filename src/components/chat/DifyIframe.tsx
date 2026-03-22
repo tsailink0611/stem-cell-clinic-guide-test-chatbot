@@ -13,6 +13,14 @@ import { CHAT_COLORS, chatLoadingByLocale, LABEL_FALLBACK_LOCALE } from "./const
 const DIFY_HEADER_H = 68;
 const DIFY_FOOTER_H = 48;
 
+/* ロボットアイコン隠蔽オーバーレイの設定
+ * ICON_OVERLAY_W: アイコンが表示される左ガター幅（px）
+ * ICON_OVERLAY_BOTTOM: 入力欄にかからないよう下端から除外する高さ（px）
+ * Dify の UI 変更時はこの値を調整すること
+ */
+const ICON_OVERLAY_W = 52;
+const ICON_OVERLAY_BOTTOM = 64;
+
 interface DifyIframeProps {
   locale: string;
 }
@@ -65,6 +73,25 @@ export default function DifyIframe({ locale }: DifyIframeProps) {
             {loadingText}
           </p>
         </div>
+      )}
+
+      {/* ロボットアイコン隠蔽オーバーレイ
+          左ガター部分のみ白で覆う。pointer-events:none でクリック・スクロールは通過する。
+          Dify の UI 変更でアイコン位置がずれた場合は ICON_OVERLAY_W / ICON_OVERLAY_BOTTOM を調整 */}
+      {loaded && (
+        <div
+          aria-hidden="true"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            bottom: `${ICON_OVERLAY_BOTTOM}px`,
+            width: `${ICON_OVERLAY_W}px`,
+            background: "#ffffff",
+            pointerEvents: "none",
+            zIndex: 1,
+          }}
+        />
       )}
 
       <iframe
